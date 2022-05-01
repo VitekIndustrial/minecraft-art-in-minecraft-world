@@ -3,7 +3,7 @@ import render, setheight
 mine = Minecraft.create()
 height = setheight.height
 
-fileimg = '42.jpg'
+fileimg = '31.jpg'
 
 def opr(rot):
     if ((rot > 0 and rot < 45) or (rot > 315 and rot < 360)) or ((rot < 0 and rot > -45) or (rot < -315 and rot > -360)):
@@ -48,10 +48,10 @@ while True:
         # mine.setBlock(ppos.x, ppos.y, ppos.z, 47)
         rt = mine.player.getRotation()
         if opr(rt) == '+z':
-            pz(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn6'))
+            pz(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn7'))
         elif opr(rt) == '-z':
-            mz(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn6'))
+            mz(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn7'))
         elif opr(rt) == '+x':
-            px(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn6'))
+            px(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn7'))
         elif opr(rt) == '-x':
-            mx(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn6'))
+            mx(ppos, render.export_for_API_mine(render.loadimg(fileimg, height), 'new_db_learn7'))

@@ -1,5 +1,6 @@
 from PIL import Image
 import joblib, threading, dick
+listc1, listc2 = [], []
 dick = dick.dick_block
 #-----------------------------------загрузка и изменение размеров изображения------------
 def loadimg(name, h):
